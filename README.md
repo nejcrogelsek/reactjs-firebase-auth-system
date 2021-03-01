@@ -5,6 +5,13 @@
 - I used reusable component for button.
 
 ## Within this app you can login with:
-### Facebook
+### Facebook - [Link](https://developers.facebook.com/)
 ### Google
-### Github
+### Github - [Link](https://github.com)
+- Go to your github profile.
+- Open settings and look for Developer settings -> OAuth Apps -> Create new OAuth app
+
+## Other links:
+[Firebase](https://firebase.google.com/)
+[React](https://reactjs.org/)
+
