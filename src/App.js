@@ -1,4 +1,4 @@
-import "./App.css";
+import SocialButton from "./components/SocialButton";
 import {
   facebookProvider,
   githubProvider,
@@ -12,11 +12,23 @@ function App() {
     console.log(res);
   };
   return (
-    <div className='app'>
-      <button onClick={() => handleOnClick(facebookProvider)}>Facebook</button>
-      <button onClick={() => handleOnClick(githubProvider)}>Github</button>
-      <button onClick={() => handleOnClick(googleProvider)}>Google</button>
-    </div>
+    <ul className='app'>
+      <SocialButton
+        name='Facebook'
+        provider={facebookProvider}
+        handleOnClick={handleOnClick}
+      />
+      <SocialButton
+        name='Google'
+        provider={googleProvider}
+        handleOnClick={handleOnClick}
+      />
+      <SocialButton
+        name='Github'
+        provider={githubProvider}
+        handleOnClick={handleOnClick}
+      />
+    </ul>
   );
 }
 
