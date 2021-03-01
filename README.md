@@ -6,10 +6,12 @@
 
 ## Within this app you can login with:
 ### Facebook - [Link](https://developers.facebook.com/)
+- Go to your apps.
+- Create new app.
 ### Google
 ### Github - [Link](https://github.com)
 - Go to your github profile.
-- Open settings and look for Developer settings -> OAuth Apps -> Create new OAuth app
+- Open settings and look for Developer settings -> OAuth Apps -> Create new OAuth app.
 
 ## Other links:
 [Firebase](https://firebase.google.com/)
