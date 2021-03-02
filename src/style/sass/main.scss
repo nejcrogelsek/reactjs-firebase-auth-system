@@ -101,5 +101,15 @@ button {
         background: #333;
       }
     }
+    &.logout {
+      background: #aa2b1d;
+      color: $white;
+      &::before {
+        background: #8d2519;
+      }
+      &::after {
+        background: #aa2b1d;
+      }
+    }
   }
 }
