@@ -11,8 +11,10 @@ const SocialButton = ({
       <button
         className={`${buttonClass}`}
         onClick={() => handleOnClick(provider)}>
-        <i className={`${iconType} ${iconName}`}></i>
-        <span>{name}</span>
+        <div className='buttonContent'>
+          <i className={`${iconType} ${iconName}`}></i>
+          <span>{name}</span>
+        </div>
       </button>
     </li>
   );

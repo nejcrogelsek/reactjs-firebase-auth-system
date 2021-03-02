@@ -7,9 +7,99 @@ ul {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-evenly;
+  @media #{$desktop} {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 li {
   list-style: none;
 }
 button {
+  width: 210px;
+  height: 80px;
+  transform: skew(25deg) rotate(-30deg) translate(0, 0);
+  box-shadow: -20px 20px 10px rgba($color: $black, $alpha: 0.5);
+  position: relative;
+  transition: 0.5s;
+  border: none;
+  transition: 0.5s;
+  &::before,
+  &::after {
+    transition: 0.5s;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 100%;
+    background: rgb(150, 150, 150);
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    transform: skewY(-45deg) translate(0, 0);
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 210px;
+    height: 20px;
+    background: rgb(150, 150, 150);
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    transform: skewX(-45deg) translate(0, 0);
+  }
+  &:hover {
+    color: $white;
+    box-shadow: -50px 50px 20px rgba($color: $black, $alpha: 0.5);
+    transform: skew(25deg) rotate(-30deg) translate(20px, -15px);
+    cursor: pointer;
+  }
+}
+button > .buttonContent {
+  > i {
+    transform: scale(2.5);
+  }
+  > span {
+    font-size: 1.2rem;
+    margin-left: 35px;
+    line-height: 1;
+  }
+}
+button {
+  &:hover {
+    &.facebook {
+      background: #4a69ad;
+      &::before {
+        background: #365492;
+      }
+      &::after {
+        background: #4a69ad;
+      }
+    }
+    &.google {
+      background: #e66a5a;
+      &::before {
+        background: #b33a2b;
+      }
+      &::after {
+        background: #e66a5a;
+      }
+    }
+    &.github {
+      background: #333;
+      color: $white;
+      &::before {
+        background: #222;
+      }
+      &::after {
+        background: #333;
+      }
+    }
+  }
 }
