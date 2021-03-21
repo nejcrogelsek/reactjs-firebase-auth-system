@@ -8,10 +8,16 @@
 ### Facebook - [Link](https://developers.facebook.com/)
 - Go to your apps.
 - Create new app.
+- In firebase enable login with Facebook.
+- Insert Client ID and app secret from created app from provided [link](https://developers.facebook.com/).
 ### Google
+- In firebase enable login with Google.
+- Provide your email address.
 ### Github - [Link](https://github.com)
 - Go to your github profile.
 - Open settings and look for Developer settings -> OAuth Apps -> Create new OAuth app.
+- In firebase enable login with Github.
+- Insert Client ID and app secret from created app from provided [link](https://github.com).
 
 ## Other links:
 [Firebase](https://firebase.google.com/)
